@@ -1,0 +1,105 @@
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+/*criando a classe menu*/
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #020064;
+}
+.menu li{
+    float: left;
+}
+ 
+.menu li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+ }
+ 
+ 
+.menu li a:hover{
+    background-color: #DFDFDF;
+    color: #003264;
+}
+
+.menu li.icon{
+    display: none;
+}
+ 
+/*aplicando @media query*/
+@media screen and (max-width: 760px){
+    /*.menu li{
+        float: none;
+        }    
+    .menu li a{        
+     
+        text-align: center;
+       
+       
+     }*/
+
+     .menu li:not(:first-child){
+         display: none;
+     }
+
+     .menu li.icon{
+         float: right;
+         display: block;
+     }
+
+     .menu.responsive{
+         position: relative;
+     }
+
+     .menu.menu.responsive li.icon{
+         position: absolute;
+         right: 0;
+         top: 0;
+     }
+
+     .menu.responsive li{
+         float: none;
+         display: inline;
+     }
+
+     .menu.responsive li a{
+         display: block;
+         text-align: left;
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

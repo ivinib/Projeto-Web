@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-with, initial-scale=1.0">
+        <title>Projeto Web Front-End</title>
+        <link rel = "stylesheet" href = "css/estilos.css">
+        <link rel = "stylesheet" href = "css/menu.css">
+        <link rel = "stylesheet" href = "css/destaque.css">
+       
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class = "menu" id="menuTopo">
+                    <li><a href = "#">A Empresa</a></li>
+                    <li><a href = "paginas/produtos.html">Produtos</a></li>
+                    <li><a href = "paginas/localizacao.html">Localização</a></li>
+                    <li><a href = "paginas/registro.html">Trabalhe Conosco</a></li>
+                
+                    <li class="icon"><a href="javascript:void(0);" onclick="mostrarMenu()">&#9776;</a></li>
+                </ul>
+            </nav>
+        </header>
+       
+        <section class = "intro"></section>
+ 
+        <div class = "container">
+            <section>
+                <article>
+                    <header>
+                        <div>
+                            <a class = "registro" href = "paginas/registro.html">Candidate-se<br />
+                            <span class = "free">&#183; Hoje &#183;</span>
+                            </a>
+                        </div>
+                        <h2>Conheça-nos um pouco</h2>
+                        <p>
+                            Desde sua fundação a ABC Tecnologia é uma
+                            empresa com foco na elaboração de soluções
+                            visando agilizar os processos relativos às
+                            tarefas de seus clientes. <br />
+                            A agilidade, redução de custos e satisfação
+                            dos nossos clientes é nossa maior meta.
+                        </p>
+                    </header>
+                    <p>
+                        Conheça nossos <a href = "#">produtos e serviços</a> e descubra o que podemos fazer por você!
+                    </p>
+                </article>
+            </section>
+            <aside>
+                <h2>Depoimentos dos nossos clientes</h2>
+                <p>Excelente qualidade, ótimos profissionais!</p>
+                <p>
+                    Estava buscando uma solução para minha clínica
+                    e a ABC nos desenvolveu um sistema sob medida,
+                    cujos resultados superaram nossas expectativas.
+                </p>
+            </aside>
+        </div>
+ 
+        <footer class = "rodape">
+            <p>
+                Avenida Paulista, 1009 - Bela Vista <br />
+                São Paulo - CEP 01311-100
+            </p>
+            <p>Copyright 2021 - Todos os direitos reservados</p>
+        </footer>
+
+        <script type="text/javascript">
+            function mostrarMenu(){
+                let elemento = document.getElementById('menuTopo')
+                if(elemento.className === "menu"){
+                    elemento.className += " responsive"
+                }else{
+                    elemento.className = "menu"
+                }
+            }
+        </script>
+    </body>
+</html>

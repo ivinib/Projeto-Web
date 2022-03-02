@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Registro de Candidatos</title>
+        <link rel = "stylesheet" href = "../css/estilos.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+       
+    </head>
+    <body>
+        <div class = "container">
+            <!-- AQUI, VAMOS CRIAR O FORMULÁRIO -->
+            <form class = "borda">
+
+                <!-- Nome do candidato -->
+                <div class="form-group row">
+                    <label for = "nome" class="col-sm-2 col-form-label">Nome:</label>
+                    <div class="col-sm-10">
+                        <input type = "text" id = "nome" name = "nome" required  = "required" autofocus = "autofocus" class="form-control" />
+                    </div>
+                </div>
+ 
+                <!-- Data de nascimento -->
+                <div class="form-group row">
+                    <label for = "data" class="col-sm-2 col-form-label">Data de Nascimento:</label>
+                    <div class="col-sm-5">
+                        <input type = "date" id = "data" name = "data" required = "required" class="form-control" />
+                    </div>
+                </div>
+
+                <!--Gênero -->
+                <div class="form-group row">
+                    <label for = "genero" class="col-sm-2 col-form-label">Gênero:</label>
+                    <div class="col-sm-10">
+                        <fieldset>
+                            <input type = "radio" id = "feminino" name = "genero" value = "feminino" />Feminino<br />
+                            <input type = "radio" id = "masculino" name = "genero" value = "masculino"/>Masculino<br />
+                            <input type = "radio" id = "outros" name = "genero" value = "outros" />Outros<br />
+                        </fieldset>
+                    </div>
+                </div>
+
+                <!-- Telefone -->
+                <div class="form-group row">
+                    <label for = "telefone" class="col-sm-2 col-form-label">Telefone:</label>
+                    <div class="col-sm-5">
+                        <input type = "tel" id = "telefone" name = "telefone" required = "required" class="form-control" />
+                    </div>
+                </div>
+ 
+                <!-- Email -->
+                <div class="form-group row">
+                    <label for = "email" class="col-sm-2 col-form-label">Email:</label>
+                    <div class="col-sm-10">
+                        <input type = "email" id = "email" name = "email" required = "required" class="form-control" />
+                    </div>
+                </div>
+
+                <!-- Lista de vagas -->
+                <div class="form-group row">
+                    <label for="tipo" class="col-sm-2 col-form-label">Tipo de Vaga:</label>
+                    <div class="col-sm-5">
+                        <input type="radio" id="desenv" name="tipo" value="desenv" checked="checked" />Desenvolvimento <br />
+                        <input type="radio" id="negocio" name="tipo" value="negocio" />Negocios
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for = "vaga" class="col-sm-2 col-form-label">Vaga desejada:</label>
+                    <div class="col-sm-5">
+                        <select name = "vaga" id = "vaga" class="form-control">
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Botão de comandos de inculsão de registro-->
+                <br />
+                <div class="form-group row">
+                    <div class="col-sm-5 col-sm-offset">
+                        <input type = "button" value = "Incluir" id="incluirButton" class="btn btn-primary" />
+                    </div>
+                </div>
+                
+            </form>
+ 
+        </div>
+        <!--Referencia aos scripts JS-->
+        <script src="../scripts/validacao_registro.js"></script>
+        <script src="../scripts/listaVagas.js"></script>
+    </body>
+</html>
